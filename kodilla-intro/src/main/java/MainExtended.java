@@ -7,7 +7,7 @@ public class MainExtended {
         double index = pageNo/100;
         boolean isGoodBook = true;
 
-        System.out.println("Pls be encouraged to read '"+title+"' by "+firstDigitName+". "+author+".");
+        System.out.println("It's a nice book to read '"+title+"' by "+firstDigitName+". "+author+".");
         System.out.println("Number of pages: "+pageNo);
         System.out.println("Index: "+index);
         System.out.println("Recommended: "+isGoodBook);
