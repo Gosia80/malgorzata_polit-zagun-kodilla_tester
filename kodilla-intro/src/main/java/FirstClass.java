@@ -17,17 +17,25 @@ public class FirstClass {                                          // class def.
         }
 
         // Module 2.2 - Tworzenie obiektu
-        Notebook notebook = new Notebook("600g", 1000);
-        System.out.println(notebook.weight + " " + notebook.price);
+        Notebook notebook = new Notebook(600, 1000, 2020);
+        System.out.println(notebook.weight + " g, " + notebook.price + " zł" + ", " + notebook.year);
+        notebook.checkWeight();
         notebook.checkPrice();  // Wywołanie metody sprawdzającej cenę (jest w klasie obiektu)
+        notebook.checkYear();
+        notebook.checkYearAndPrice();
 
-        Notebook heavyNotebook = new Notebook("2000g", 1500);
-        System.out.println(heavyNotebook.weight + " " + heavyNotebook.price);
+        Notebook heavyNotebook = new Notebook(2000, 1500, 2017);
+        System.out.println(heavyNotebook.weight + " g, " + heavyNotebook.price + " zł" + ", " + heavyNotebook.year);
+        heavyNotebook.checkWeight();
         heavyNotebook.checkPrice();
+        heavyNotebook.checkYear();
+        heavyNotebook.checkYearAndPrice();
 
-        Notebook oldNotebook = new Notebook("1200g", 500);
-        System.out.println(oldNotebook.weight + " " + oldNotebook.price);
+        Notebook oldNotebook = new Notebook(1200, 3000, 2014);
+        System.out.println(oldNotebook.weight + " g, " + oldNotebook.price + " zł" + ", " + oldNotebook.year);
+        oldNotebook.checkWeight();
         oldNotebook.checkPrice();
-
+        oldNotebook.checkYear();
+        oldNotebook.checkYearAndPrice();
     }
 }
