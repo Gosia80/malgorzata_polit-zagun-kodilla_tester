@@ -20,6 +20,7 @@ public class Notebook {
             System.out.println("This notebook is expensive.");
         }
     }
+
     // Module 2.3 - Metoda sprawdzająca wagę laptopa
     public void checkWeight() {
         if (this.weight < 1000) {
@@ -33,9 +34,9 @@ public class Notebook {
 
     // Module 2.3 - Metoda sprawdzająca rok produkcji laptopa
     public void checkYear() {
-        if (this.year<2015) {
+        if (this.year < 2015) {
             System.out.println("This notebook is old.");
-        } else if (this.year>=2015 && this.year<=2019){
+        } else if (this.year >= 2015 && this.year <= 2019) {
             System.out.println("This notebook is not new.");
         } else {
             System.out.println("This notebook is new.");
@@ -44,13 +45,13 @@ public class Notebook {
 
     // Module 2.3 - Metoda sprawdzająca rok produkcji i cenę
     public void checkYearAndPrice() {
-        if (this.year<2017 && this.price<=2000) {
+        if (this.year < 2017 && this.price <= 2000) {
             System.out.println("It's old and cheap.");
-        } else if (this.year<2017 && this.price>2000) {
+        } else if (this.year < 2017 && this.price > 2000) {
             System.out.println("It's old and expensive.");
-        } else if (this.year>=2017 && this.price<=4000) {
+        } else if (this.year >= 2017 && this.price <= 4000) {
             System.out.println("It's new and cheap.");
-        } else if (this.year>=2017 && this.price>4000) {
+        } else if (this.year >= 2017 && this.price > 4000) {
             System.out.println("It's new and expensive.");
         } else {
             System.out.println("It's not on a list. Don't choose this one.");
